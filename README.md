@@ -1,4 +1,4 @@
-# hackagou_2025
+# hackagou
 
 Dépôt de préparation pour l'épreuve CTF Hackagou. Ressources pour l'entraînement et archives de l'epreuve.
 
