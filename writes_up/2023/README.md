@@ -3,6 +3,8 @@
 Les write-ups officiels de l'édition 2023 du HacKagou : Chasse aux trésors !
 Source : https://github.com/aNaoy/HacKagou2023-WriteUps
 
+Certains chall sont également dispo sur ce repo : https://github.com/Gwan-Forth/hackagou_CTF/tree/main/2023
+
 ## PWN
 - [Sisi](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/sisi/README.md)
 - [Barriere](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/barriere/README.md)
