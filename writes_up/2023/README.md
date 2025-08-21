@@ -3,27 +3,52 @@
 Les write-ups officiels de l'édition 2023 du HacKagou : Chasse aux trésors !
 Source : https://github.com/aNaoy/HacKagou2023-WriteUps
 
-Certains chall sont également dispo sur ce repo : https://github.com/Gwan-Forth/hackagou_CTF/tree/main/2023
+Certains chall ont également été pris sur ce repo : https://github.com/Gwan-Forth/hackagou_CTF/tree/main/2023
 
-## PWN
-- [Sisi](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/sisi/README.md)
-- [Barriere](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/barriere/README.md)
+Merci aux auteurs !
+
+## Pwn
+- [Barriere](Pwn/barriere/README.md)
+- [Sisi](Pwn/sisi/README.md)
 
 ## Web
-- [MissConf](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/missconf/README.md)
-- [AgentUtilisateur](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/agentutilisateur/README.md)
-- [AnswerMe](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/answerme/README.md)
-- [Escouelle](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/escouelle/README.md)
+- [AgentUtilisateur](Web/agentutilisateur/README.md)
+- [AnswerMe](Web/answerme/README.md)
+- [Escouelle](Web/escouelle/README.md)
+- [MissConf](Web/missconf/README.md)
 
 ## Dev
-- [BurryIt](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/burryit/README.md)
-- [Maths](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/maths/README.md)
+- [BurryIt](Dev/burryit/README.md)
+- [Maths](Dev/maths/README.md)
 
 ## Forensic
-- [Dé&Ness](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/deetness/README.md)
+- [Dé&Ness](Forensic/deetness/README.md)
 
 ## Stegano
-- [Ellesbe](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/ellesbe/README.md)
+- [3x1f](Stegano/3x1f.md)
+- [Ellesbe](Stegano/ellesbe/README.md)
+- [Ellesbe](Stegano/Ellesbe.md)
 
 ## OSINT
-- [HiddN](https://github.com/aNaoy/HacKagou2023-WriteUps/blob/main/hiddn/README.md)
+- [Goalcausse](OSINT/Goalcausse/README.md)
+- [HiddN](OSINT/hiddn/README.md)
+
+## Misc
+- [UnitedOrCity](Misc/unitedorcity/README.md)
+
+## Reverse
+- [Rizverse](Reverse/rizverse/README.md)
+
+## Web3
+- [SingeBlasé](web3/SingeBlasé.md)
+
+## _EZRun
+- [Askip](_EZRun/Askip.md)
+- [Base64](_EZRun/base64.md)
+- [Julius](_EZRun/Julius.md)
+- [LostPassword](_EZRun/LostPassword.md)
+- [Morsure](_EZRun/Morsure.md)
+- [PasswordFlood](_EZRun/PasswordFlood.md)
+- [Sicstifort](_EZRun/Sicstifort.md)
+- [Sponsors](_EZRun/Sponsors.md)
+- [St4ff](_EZRun/St4ff.md)

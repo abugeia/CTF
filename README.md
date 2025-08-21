@@ -24,6 +24,12 @@ https://ctf2024.hackagou.nc/
 2025  
 https://midhack.hackagou.nc/
 
+## Entraînement 🚩
+- [picoCTF](https://picoctf.org/)
+- [capturetheflag](https://capturetheflag.it/risorse/come-imparo)
+- [overthewire](https://overthewire.org/wargames/)
+- [pwnable](http://pwnable.kr/)
+
 
 # team hack
 Le lien pour troller avec never gonna give you up :  
