@@ -42,11 +42,16 @@ Format du flag : ``OPENNC{solution_ip:port}``
 
 ## Solution
 
+`wireshark fichier.pcapng`
+Dans la barre de filtre, entrez : http
+
 En analisant la premiere requete HTTP nous pouvons répondre à cette question.
 
 ![alt text](image.png)
 
 Mais on peut également en suivant les http STREAM
+
+Clique droit sur la 1ere requête > follow > HTTP Stream
 
 ![alt text](image-1.png)
 
@@ -97,7 +102,7 @@ Regardons la réponse :
 
 ![alt text](image-4.png)
 
-Bingo, un retour de commande, on a une big une RCE.
+Bingo, un retour de commande, on a une RCE.(Remote Code Execution)
 
 Pour trouver la RCE on va faire une petite recherche google du directory path: 
 

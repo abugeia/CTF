@@ -10,3 +10,5 @@ _Format du flag : OPENNC{md5_du_gain}_
 _Exemple si le gain est de 1.35 BTC avec md5sum("1.35BTC") : OPENNC{dd720cffa415667815031441bf80b226}_
 
 **Challenge créé avec la contribution de la Police Nationale, passe les voir sur leur stand avec ton chapeau blanc pour parler cyber**
+
+`t=$(echo -n 0.05ETH| md5sum| awk  '{print $1}'); echo "OPENNC{$t}"`

@@ -14,7 +14,10 @@ Format du flag : ``OPENNC{quelque_chose}``
 
 
 
+
 ## Résolution
+
+`tar -xf writes_up\2024\Forensic\GEET\Histoire_modifiee.tar.gz`
 
 En affichant toust ce qui est dans ce dossier nous remarquant que c'est un dépot git.
 
@@ -98,8 +101,39 @@ Autre solution possible :
 Les Orihena étaient un peuple puissant et prospère. Ils régnaient sur l'océan et maîtrisaient les secrets de la navigation. Leur pouvoir venait de leur lien profond avec l'océan. OPENNC{La_Vraie_Histoire}
 ```
 
+## Solution alternative : Recherche dans le repository
+
+Dans certains cas, vous pouvez chercher le flag directement dans les fichiers du repository. Cependant, dans ce challenge spécifique, le flag a été modifié dans l'historique git et n'est plus présent dans le fichier actuel, donc une simple commande `grep` sur le fichier actuel ne fonctionnera pas.
+
+La commande `grep` est utile quand le flag est présent dans les fichiers actuels du repository. Sachant que le flag commence par `OPENNC{`, vous pouvez utiliser la commande `grep` pour chercher ce motif :
+
+```bash
+┌──(user@host)-[~/HACKAGOU/Histoire_modifiee]
+└─$ grep -r "OPENNC{" .
+```
+
+Cette commande recherche récursivement dans tous les fichiers du répertoire courant le motif "OPENNC{" et affiche les lignes correspondantes avec le chemin du fichier. Si le flag est présent dans les fichiers actuels, il sera trouvé par cette commande.
+
+Autres options utiles avec grep :
+- `-i` : pour ignorer la casse
+- `-n` : pour afficher les numéros de ligne
+- `--include="*.txt"` : pour limiter la recherche à certains types de fichiers
+
+```bash
+┌──(user@host)-[~/HACKAGOU/Histoire_modifiee]
+└─$ grep -r -n "OPENNC{" . --include="*.txt"
+```
+
+Cependant, dans ce challenge, le flag n'est plus présent dans le fichier actuel. Pour chercher dans tout le contenu du repository, y compris l'historique, vous pouvez combiner `grep` avec d'autres commandes git :
+
+```bash
+# Chercher dans tous les blobs (contenu de fichiers) de tous les commits
+git rev-list --all | xargs git grep "OPENNC{"
+
+# Chercher dans le contenu de tous les fichiers de tous les commits
+git log -p | grep "OPENNC{"
+```
 
 
 
 flag : ``OPENNC{La_Vraie_Histoire}``
-

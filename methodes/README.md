@@ -11,6 +11,7 @@
 - [Github Secrets](https://github.com/neodyme-labs/github-secrets): rechercher des **commits orphelins ou force-pushés** dans un dépôt Github
 - [Zip Password Cracker](https://passwordrecovery.io/zip-file-password-removal/): un **trouveur de mot de passe zip** en ligne vraiment utile et gratuit
 - [Regex Check](https://www.debuggex.com/): vérifier les **expressions régulières** en ligne
+- [ScanQR](https://scanqr.org/): Scanner de QR code
 #### Ressources
 - [ASCII Table](http://www.asciitable.com/)
 
@@ -57,6 +58,7 @@
 - [Subdomain Finder](https://subdomainfinder.c99.nl/index.php): site web pour **trouver les sous-domaines d'URLs**, même cachés
 - [Google Certificates](https://transparencyreport.google.com/https/certificates): rechercher les certificats d'un site web par domaine
 - [Traversal Archives](https://github.com/jwilk/traversal-archives): échantillons de fichiers d'archive dans divers formats qui tentent d'exploiter des bugs de traversée de répertoire (hypothétiques)
+- [Url decoder](https://www.urldecoder.org/fr/) : Rend une url human readable
 #### Ressources
 - [CSP Cheatsheet](https://six2dez.gitbook.io/pentest-book/enumeration/web/csp): liste des **CSP et possibilités de contournement** relatives
 - [JSONP Endpoints](https://github.com/zigoo0/JSONBee/blob/master/jsonp.txt): liste des **endpoints JSONP bien connus**
@@ -83,6 +85,8 @@
 - [Wayback Machine](https://archive.org/web/): **archive de pages web à un moment donné**
 - [Sherlock](https://github.com/sherlock-project/sherlock): traquer les **comptes de réseaux sociaux par nom d'utilisateur**
 - [Email lookup](https://epieos.com/): outil pour **récupérer des informations liées à une adresse email**
+- [Plus code](https://plus.codes/map) : Conversion des plus code en coordonnées gps
+- [TinEye](https://www.tineye.com/search) : recherche de la provenance d'une image
 
 ## Reverse Engineering ↩️
 ### Outils
