@@ -63,6 +63,7 @@
 - [CSP Cheatsheet](https://six2dez.gitbook.io/pentest-book/enumeration/web/csp): liste des **CSP et possibilités de contournement** relatives
 - [JSONP Endpoints](https://github.com/zigoo0/JSONBee/blob/master/jsonp.txt): liste des **endpoints JSONP bien connus**
 - [Web Payloads](https://github.com/swisskyrepo/PayloadsAllTheThings): liste des **payloads Web** de diverses techniques
+- [JWT](https://www.jwt.io/) : chiffrer et déchiffrer des Json Web Token
 
 ## Pwn 🐛
 ### Outils
@@ -79,14 +80,16 @@
 - [Autopsy](https://www.sleuthkit.org/autopsy/): **outil de récupération de fichiers** avec data carving, ..
 - [Foremost](https://tools.kali.org/forensics/foremost): **outil de récupération de fichiers** basé sur leurs magic bytes, en-têtes, ..
 ### Ressources
+- [Virus total](https://www.virustotal.com/): base de connaissance sur les malwares
 
 ## OSINT 🌐
 - [Mail from LinkedIn](https://skrapp.io/tutorials/linkedin-email-finder): extension Chrome pour **trouver des adresses email depuis une page Linkedin**
 - [Wayback Machine](https://archive.org/web/): **archive de pages web à un moment donné**
 - [Sherlock](https://github.com/sherlock-project/sherlock): traquer les **comptes de réseaux sociaux par nom d'utilisateur**
-- [Email lookup](https://epieos.com/): outil pour **récupérer des informations liées à une adresse email**
+- [Epios](https://epieos.com/): outil pour **récupérer des informations liées à une adresse email**
 - [Plus code](https://plus.codes/map) : Conversion des plus code en coordonnées gps
 - [TinEye](https://www.tineye.com/search) : recherche de la provenance d'une image
+- [What 3 words](https://what3words.com/) : 3 mots pour définir n'importe quelle coordonnée GPS
 
 ## Reverse Engineering ↩️
 ### Outils
