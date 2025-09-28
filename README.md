@@ -1,4 +1,4 @@
-# hackagou
+# CTF
 
 Dépôt de préparation pour les épreuves CTF. Ressources pour l'entraînement et write up des chall.
 

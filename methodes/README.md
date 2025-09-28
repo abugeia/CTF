@@ -65,6 +65,7 @@
 - [JSONP Endpoints](https://github.com/zigoo0/JSONBee/blob/master/jsonp.txt): liste des **endpoints JSONP bien connus**
 - [Web Payloads](https://github.com/swisskyrepo/PayloadsAllTheThings): liste des **payloads Web** de diverses techniques
 - [JWT](https://www.jwt.io/) : chiffrer et déchiffrer des Json Web Token
+- [Pentestmonkey](https://pentestmonkey.net/tools/web-shells/php-reverse-shell): un reverse shell php
 
 ## Pwn 🐛
 ### Outils
