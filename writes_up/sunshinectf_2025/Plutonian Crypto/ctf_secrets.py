@@ -1,0 +1,1 @@
+MESSAGE = b"dummy_message_for_testing"

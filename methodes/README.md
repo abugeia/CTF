@@ -14,6 +14,7 @@
 - [ScanQR](https://scanqr.org/): Scanner de QR code
 #### Ressources
 - [ASCII Table](http://www.asciitable.com/)
+- [GTFOBins](https://gtfobins.github.io/) : liste de binaires Unix pouvant être utilisés pour contourner des restrictions de sécurité locales sur des systèmes mal configurés.
 
 ## Cryptographie 🔒
 #### Outils
