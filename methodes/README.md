@@ -2,15 +2,16 @@
  *ressources/sites web/outils* utiles pour résoudre les défis CTF.
 
 #### Outils
-- [John Hammond - Katana](https://github.com/JohnHammond/ctf-katana): **énorme dépôt d'outils CTF très utiles**
-- [Cyberchef](https://gchq.github.io/CyberChef/): outil pour effectuer **tous types de calculs de toute catégorie**
-- [Hex Editor](https://hexed.it/): **éditeur hexadécimal** en ligne pour fichiers
-- [Online Converter](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html): outil **convertisseur ASCII/Hex/Dec/Bin/b64** en ligne
-- [XOR Calculator](http://xor.pw/)
+- [John Hammond - Katana](https://github.com/JohnHammond/ctf-katana): **énorme dépôt d'outils CTF** ★★★
+- [zardus ctf-tools](https://github.com/zardus/ctf-tools) **énorme dépôt d'outils CTF** ★★★
+- [Cyberchef](https://gchq.github.io/CyberChef/): outil pour effectuer **tous types de calculs de toute catégorie** ★★★
+- [Hex Editor](https://hexed.it/): **éditeur hexadécimal** en ligne pour fichiers ★★
+- [Online Converter](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html): outil **convertisseur ASCII/Hex/Dec/Bin/b64** en ligne ★
+- [XOR Calculator](http://xor.pw/) ★★
 - [Resource Saver](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb?hl=en-US): extension Chrome pour **télécharger toutes les ressources d'un site web**
-- [Github Secrets](https://github.com/neodyme-labs/github-secrets): rechercher des **commits orphelins ou force-pushés** dans un dépôt Github
+- [Github Secrets](https://github.com/neodyme-labs/github-secrets): rechercher des **commits orphelins ou force-pushés** dans un dépôt Github ★★
 - [Zip Password Cracker](https://passwordrecovery.io/zip-file-password-removal/): un **trouveur de mot de passe zip** en ligne vraiment utile et gratuit
-- [Regex Check](https://www.debuggex.com/): vérifier les **expressions régulières** en ligne
+- [Regex Check](https://www.debuggex.com/): vérifier les **expressions régulières** en ligne ★
 - [ScanQR](https://scanqr.org/): Scanner de QR code
 #### Ressources
 - [ASCII Table](http://www.asciitable.com/)
@@ -18,18 +19,18 @@
 
 ## Cryptographie 🔒
 #### Outils
-- [dCode](https://www.dcode.fr): **paradis de la crypto**
-- [QuipQuip](https://quipqiup.com/): **résolveur de chiffrement par substitution** en ligne avec analyse fréquentielle, permet aussi d'insérer des indices de fréquence
+- [dCode](https://www.dcode.fr): **paradis de la crypto** ★★★
+- [QuipQuip](https://quipqiup.com/): **résolveur de chiffrement par substitution** en ligne avec analyse fréquentielle, permet aussi d'insérer des indices de fréquence ★★
 - [Big Numbers Calculator 1](http://www.javascripter.net/math/calculators/100digitbigintcalculator.htm): une **calculatrice en ligne pour les entiers énormes**
 - [Big Numbers Calculator 2](https://defuse.ca/big-number-calculator.htm): une **calculatrice en ligne pour les entiers énormes**, interface plus basique mais peut-être meilleures performances
 - [RSA Calculator](https://www.cryptool.org/en/cto/highlights/rsa-step-by-step): **calculatrice de paramètres RSA en ligne avec chiffrement/déchiffrement**, fonctionne aussi avec de gros nombres 
 - [Inverse mod N Calculator](https://www.dcode.fr/modular-inverse): calculer l'**inverse modulaire d'un nombre**, même avec de gros nombres
-- [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool): outil Python pour effectuer des **attaques RSA**
-- [FactorDB](http://factordb.com/): trouver des **factorisations d'entiers bien connues**
-- [CrackStation](https://crackstation.net/): **casseur de hash** en ligne (md5, sha, ...)
+- [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool): outil Python pour effectuer des **attaques RSA** ★★★
+- [FactorDB](http://factordb.com/): trouver des **factorisations d'entiers bien connues** ★★★
+- [CrackStation](https://crackstation.net/): **casseur de hash** en ligne (md5, sha, ...) ★★
 - [Vigenere Solver](https://www.guballa.de/vigenere-solver): très bon **résolveur de chiffre de Vigenère** en ligne avec bruteforce
 - [Substitution Solver](https://www.guballa.de/substitution-solver): très bon **résolveur de chiffre par substitution** en ligne avec bruteforce
-- [Sage Math](https://sagecell.sagemath.org/): environnement Sage en ligne pour **effectuer des calculs cryptographiques**
+- [Sage Math](https://sagecell.sagemath.org/): environnement Sage en ligne pour **effectuer des calculs cryptographiques** ★
 - [Crunch](https://tools.kali.org/password-attacks/crunch): outil Linux pour **créer des dictionnaires personnalisés** pour les attaques (hash, pwd, ..)
 - [Online Hash Crack](https://www.onlinehashcrack.com/): gros site web pour **effectuer le cassage et l'identification de hash/mot de passe** sur divers fichiers
 - [Hash Identifier](https://tools.kali.org/password-attacks/hash-identifier): outil Linux pour **effectuer l'identification de hash**
@@ -42,13 +43,13 @@
 
 ## Stéganographie 🎨
 #### Outils
-- [Aperi'Solve](https://aperisolve.fr/): **l'un des meilleurs outils en ligne**, avec analyse statique et exécution de zsteg, steghide, exiftool, binwalk, foremost, .. 
-- [StegOnline](https://stegonline.georgeom.net): gros outil stego, uploader une image et **modifier/extraire des données**
-- [Stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve): fichier JAR pour visualiser le **texte caché dans les images**
+- [Aperi'Solve](https://aperisolve.fr/): **l'un des meilleurs outils en ligne**, avec analyse statique et exécution de zsteg, steghide, exiftool, binwalk, foremost, ..  ★★★
+- [StegOnline](https://stegonline.georgeom.net): gros outil stego, uploader une image et **modifier/extraire des données** ★★
+- [Stegsolve](https://github.com/eugenekolo/sec-tools/tree/master/stego/stegsolve/stegsolve): fichier JAR pour visualiser le **texte caché dans les images** ★★
 - [Steg 1](https://stylesuxx.github.io/steganography/): **encodeur/décodeur en ligne de fichiers dans les images**
 - [Steg 2](https://futureboy.us/stegano/decinput.html): **encodeur/décodeur en ligne de fichiers dans les images**, peut-être plus puissant
 - [Images Color picker](https://imagecolorpicker.com/): obtenir les **couleurs des sites web/images en Hex/RGB**
-- [Stegseek](https://github.com/RickdeJager/stegseek): **casseur steghide** ultra rapide qui peut être utilisé pour extraire des données cachées des fichiers.
+- [Stegseek](https://github.com/RickdeJager/stegseek): **casseur steghide** ultra rapide qui peut être utilisé pour extraire des données cachées des fichiers. ★★★
 #### Ressources
 - [steghide](http://steghide.sourceforge.net/documentation/manpage.php): site web manuel de l'outil **Steghide**
 - [zsteg](https://github.com/zed-0xff/zsteg): outil Ruby à des fins de stéganographie
@@ -86,11 +87,11 @@
 
 ## OSINT 🌐
 - [Mail from LinkedIn](https://skrapp.io/tutorials/linkedin-email-finder): extension Chrome pour **trouver des adresses email depuis une page Linkedin**
-- [Wayback Machine](https://archive.org/web/): **archive de pages web à un moment donné**
-- [Sherlock](https://github.com/sherlock-project/sherlock): traquer les **comptes de réseaux sociaux par nom d'utilisateur**
+- [Wayback Machine](https://archive.org/web/): **archive de pages web à un moment donné** ★★
+- [Sherlock](https://github.com/sherlock-project/sherlock): traquer les **comptes de réseaux sociaux par nom d'utilisateur** ★★★
 - [Epios](https://epieos.com/): outil pour **récupérer des informations liées à une adresse email**
 - [Plus code](https://plus.codes/map) : Conversion des plus code en coordonnées gps
-- [TinEye](https://www.tineye.com/search) : recherche de la provenance d'une image
+- [TinEye](https://www.tineye.com/search) : recherche de la provenance d'une image ★
 - [What 3 words](https://what3words.com/) : 3 mots pour définir n'importe quelle coordonnée GPS
 
 ## Reverse Engineering ↩️
