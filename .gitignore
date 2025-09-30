@@ -213,3 +213,5 @@ uv.lock
 pyproject.toml
 
 .kilocode/
+.github/instructions/
+writes_up/hackagou_2025/

