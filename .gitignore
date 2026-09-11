@@ -215,3 +215,14 @@ pyproject.toml
 .kilocode/
 .github/instructions/
 writes_up/hackagou_2025/
+
+# Agents IA / MCP — configuration locale de poste, jamais publiée (repo public).
+# Même logique que .kilocode/ et .github/instructions/ ci-dessus.
+#   .claude/   settings de projet (enabledMcpjsonServers)
+#   .mcp.json  déclaration du serveur MCP ctfd (URL + ${CTFD_TOKEN})
+#   .direnv/   cache direnv ; .envrc est déjà couvert plus haut (Environments)
+.claude/
+.mcp.json
+.direnv/
+# pieces jointes telechargees par ctfd-mcp (-download-dir, defaut relatif au cwd)
+ctfd-downloads/
