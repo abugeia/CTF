@@ -63,17 +63,11 @@ Te Ara, NZ Herald.
 Nom officiel de l'installation : **« The Pine Man »**. En appliquant le format (minuscules,
 espaces → `_`) :
 
-**Non résolu.** Lieu identifié (statue « The Pine Man » / rond-point de Tokoroa, NZ) mais flag non trouvé. Refusés sur le legacy : `OPENNC{-38.21,175.87}`, `OPENNC{The_Pine_Man_of_Tokoroa}`, `OPENNC{the_pine_man}`, `OPENNC{the_pineman}`. Le format/casse exact reste à déterminer.
+Le nom retenu est celui de la fiche Google Maps (« The Pine Man of Tokoroa »), mis en minuscules avec `_` comme l'exige l'énoncé de la plateforme legacy. Refusés : `the_pine_man`, `the_pineman`, coordonnées GPS (format de l'ancienne édition).
 
-Confiance : **probable**. Le lieu (Tokoroa) et la sculpture (*The Pine Man*, hommage à l'industrie
-forestière et aux familles de bûcherons) sont **certains** ; seule la forme exacte de la chaîne
-reste à confirmer.
+Flag : ``OPENNC{the_pine_man_of_tokoroa}``
 
-### Variantes à tester si `the_pine_man` est refusé
-- ``OPENNC{the_pineman}`` (souvent écrit en un seul mot : *The Pineman*)
-- ``OPENNC{pineman}``
-- ``OPENNC{pine_man}``
-- ``OPENNC{the_pine_man_of_tokoroa}`` (version minuscule de l'ancien candidat)
+
 
 ## Fichiers
 
