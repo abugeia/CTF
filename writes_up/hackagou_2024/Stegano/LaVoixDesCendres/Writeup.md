@@ -83,7 +83,9 @@ OPENNC{S4FE_  +  ZONE_ANTI_  +  I4}
 soit, en leetspeak, « **SAFE ZONE ANTI IA** » (une zone protégée anti-IA, cohérent avec
 KAIROS l'IA hostile du scénario). Le `4` remplace le `A` (comme dans `S4FE`).
 
-**Non résolu.** SSTV Robot36 décodé (3 fragments), lecture probable « SAFE ZONE ANTI IA ». Refusés sur le legacy : `OPENNC{S4FE_ZONE_ANTI_I4}`, `OPENNC{S4FE_ZONE_ANTI_IA}`. Le leet/assemblage exact des fragments reste à confirmer.
+Les trois images SSTV portent chacune un fragment, à lire attentivement (leet, `0` et `4`) : `OPENNC{S4FE_` + `Z0NE_4NTI_` + `I4}`. Erreur initiale : lecture `ZONE_ANTI_` (lettres au lieu de `0`/`4`), refusée par la plateforme.
+
+Flag : ``OPENNC{S4FE_Z0NE_4NTI_I4}``
 
 Confiance : **probable** (fragments 1 et 2 très nets ; le 3ᵉ se lit `I4}`). Variante à tester
 si refus : ``OPENNC{S4FE_ZONE_ANTI_IA}``.
