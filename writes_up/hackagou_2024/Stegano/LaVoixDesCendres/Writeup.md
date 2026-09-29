@@ -94,3 +94,49 @@ si refus : ``OPENNC{S4FE_ZONE_ANTI_IA}``.
 
 - `Ondes.zip` d'origine : `09376.wav`, `24354.wav`, `87384.wav` (copiés ici)
 - Images décodées : `87384_decoded.png`, `24354_decoded.png`, `09376_decoded.png`
+
+---
+
+## Le Dernier Camp : Retrouver les nôtres [2/2] (2025)
+Catégorie : OSINT — Points : ~243 (dynamique) — Auteur : Ketsui
+
+### Énoncé
+> Des lignes, des formes, une découpe de terrain, mais où est-ce ?
+>
+> [...] Trouve cet endroit ! Trouve le Nom de cette commune en Ajïe
+>
+> Format du Flag : `OPENNC{nom_du_village}`
+>
+> PS : Pour réussir ce Challenge il faut utiliser les informations issues du premier.
+
+![camp.png](camp.png)
+
+### Résolution
+
+L'indice « informations issues du premier » renvoie aux trois images décodées en SSTV du challenge
+[1/2] (`87384_decoded.png`, `24354_decoded.png`, `09376_decoded.png`). Empilées verticalement dans
+l'ordre de leurs noms de fichiers, elles se recollent en **une seule photo aérienne continue** (la
+ligne de crête se prolonge exactement d'une image à l'autre) :
+
+- en haut : relief/forêt (aucun détail) ;
+- au milieu : une crête montagneuse, puis un village linéaire le long d'une route côtière ;
+- en bas : une **grille dense de bâtiments** coupée par une route diagonale, bordée d'une zone
+  parfaitement lisse (relevé de niveaux de gris plat, sans texture — donc de l'eau, pas de la forêt).
+
+Cette dernière zone est caractéristique d'une **ville minière** organisée en grille — inhabituel
+pour un simple village kanak, mais typique d'une agglomération construite autour d'une exploitation
+de nickel.
+
+En comparant avec les empreintes de bâtiments OpenStreetMap (`overpass-api.de`) des communes de
+la zone linguistique Ajië (Houaïlou, Poya, Bourail, Moindou, Kouaoua), seule **Kouaoua** présente
+une grille de bâtiments aussi dense et régulière, collée à un littoral net — cohérent avec son
+histoire : village créé en 1890 avec le début de l'extraction du nickel, où le convoyeur
+« Serpentine » (11 km) achemine le minerai du gisement de Méa jusqu'à la mer.
+
+Kouaoua se nomme **« Kaa Wi Paa »** en ajië (et en mea), comme Houaïlou se nomme « Waa Wi Lûû ».
+
+Flag : ``OPENNC{Kaa_Wi_Paa}``
+
+### Fichiers
+- `camp.png` : image de l'énoncé
+- `kouaoua_zoom.png` : empreintes OSM (bâtiments/routes/côte) de Kouaoua, comparées à la photo
