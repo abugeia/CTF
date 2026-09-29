@@ -1,4 +1,4 @@
-![rizverse-600x400.png](https://ctf2023.hackagou.nc/files/6934d3f08f4d0f825553a550f0c78a3b/rizverse-600x400.png)
+![rizverse](rizverse.png)
 
 Assis au comptoir de ce bar, vous demandez le Riz Vierge spécial du gérant. Après l'avoir dégusté, vous remarquez un message étrange au fond du bol et interpellez le gérant sur sa signification. Celui-ci vous affirme que sa recette lui a été donnée par un pirate légendaire qui ne cesse de faire des énigmes pour cacher ses trésors, et l'eau qui ruisselle dans le bol finit par créer un message, toujours le même.
 
@@ -7,7 +7,7 @@ Le message est le suivant :
 > 160 172 104 107 106 70 104 20 70 126 81 20 85 106 106 81 20 126 81 106 70 106 104 85 106 169 106 117 162 122 113 113 120 119 118
 
 La recette du gérant est jointe.
-![rizverse](rizverse.py)
+[rizverse.py](rizverse.py)
 
 ```python
 def fun1(mot):
