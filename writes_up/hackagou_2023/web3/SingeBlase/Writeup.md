@@ -87,3 +87,44 @@ ouvrir la collection dérivée, lire achat/revente à 17 jours d'écart, puis
 
 - `quel_gain.png` : image du challenge (la « peinture »)
 - `comparaison_bayc742.png` : à gauche l'image du challenge, à droite le BAYC #742 authentique
+
+### Confirmation trait par trait (base de données complète)
+
+En téléchargeant la base complète des 10 000 traits BAYC (`skogard/apebase`, fichier `db`,
+6 Mo, une entrée JSON par ape), on peut confirmer précisément l'identification :
+
+| Trait | Image du challenge | BAYC #742 |
+|---|---|---|
+| Fur | Cheetah | **Cheetah** ✅ |
+| Eyes | Sunglasses | **Sunglasses** ✅ |
+| Hat | Sea Captain's Hat (recoloré noir) | **Sea Captain's Hat** ✅ |
+| Clothes | absent (débardeur retiré) | Tanktop |
+| Background | turquoise/aquamarine | Purple |
+
+Aucun autre ape sur les 10 000 ne réunit fourrure Cheetah + Sea Captain's Hat + Sunglasses.
+Le fond et les vêtements ont été modifiés pour l'illustration du challenge (cohérent avec le
+scénario : contrefaçon peinte par le fils du Capt'N), mais les traits diagnostiques (fourrure,
+lunettes, chapeau) désignent sans ambiguïté le **Bored Ape #742**.
+
+### Blocage : historique des transactions inaccessible
+
+Pour calculer le gain, il faut l'historique d'achat/revente du token #742 (transaction d'achat,
+puis revente 17 jours après). Toutes les sources testées échouent depuis cet environnement :
+
+- **Etherscan** (`etherscan.io/nft/.../742`) : la section *Item Activity* est vide côté serveur
+  (rendue en JS côté client) ; seul un résumé statique donne *« Last Sale (Item): 0.12 ETH »*,
+  sans date ni ne garantissant qu'il s'agisse de la bonne transaction (conversion USD calculée
+  au cours du jour de consultation, pas au cours historique).
+- **Reservoir API**, **OpenSea API v2** : résolution DNS impossible (`api.reservoir.tools`,
+  `api.opensea.io`) — domaines non autorisés depuis ce réseau — ou 401 sans clé d'API.
+- **CoinMarketCap NFT** : pas de page par token.
+
+Sans accès à un nœud Ethereum ou une API blockchain, le gain de Connor Sturdy ne peut pas être
+calculé de façon fiable depuis cette machine. **Aucun flag n'est soumis** — un md5 sans les deux
+montants réels serait une pure supposition.
+
+### Pour continuer (à faire depuis un poste avec accès blockchain)
+1. Ouvrir `https://etherscan.io/nft/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/742#tokentxns`
+   dans un navigateur (JS activé) pour charger l'historique complet des transferts.
+2. Repérer les deux ventes espacées de 17 jours, noter les montants en ETH (ou BTC).
+3. `md5sum` de la chaîne `"<gain>ETH"` (ou `BTC` selon l'unité), format `OPENNC{...}`.
