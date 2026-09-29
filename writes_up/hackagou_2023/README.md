@@ -39,7 +39,7 @@ Merci aux auteurs !
 - [Rizverse](Reverse/rizverse/RizVerse.md)
 
 ## Web3
-- [SingeBlasé](web3/SingeBlasé.md)
+- [SingeBlasé](web3/SingeBlase/SingeBlase.md)
 
 ## _EZRun
 - [Askip](_EZRun/Askip.md)
