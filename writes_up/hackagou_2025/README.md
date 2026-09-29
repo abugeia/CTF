@@ -1,8 +1,8 @@
 # HacKagou 2025 — Write-ups
 
-Édition 2025 « Apocalypse » (IA NEURONA / XANTHOS / agence MEH). Write-ups reconstitués depuis la plateforme d'entraînement legacy.hackagou.nc. Les challenges à instance Docker (IGOR, Neurona Maintenance, Prompt Treatment, L'éthique du hacker [2/3]) ne sont pas encore documentés.
+Édition 2025 « Apocalypse » (IA NEURONA / XANTHOS / agence MEH). Write-ups reconstitués depuis la plateforme d'entraînement legacy.hackagou.nc. Les challenges à instance Docker (ctfd-whale) ont été résolus en relançant les instances ; seul **Prompt Treatment** (épreuve IA) reste à documenter.
 
-26 challenges documentés (2 QCM sans flag OPENNC).
+29 challenges documentés (2 QCM sans flag OPENNC).
 
 | Catégorie | Challenge | Flag | Write-up |
 |---|---|---|---|
@@ -32,3 +32,6 @@
 | Stegano | Passenger Name Record (PNR) | `OPENNC{S3CR3TK3Y}` | [Stegano/PassengerNameRecord/Writeup.md](Stegano/PassengerNameRecord/Writeup.md) |
 | Stegano | Plan de vol | `OPENNC{SB421_Bauerfield}` | [Stegano/PlanDeVol/Writeup.md](Stegano/PlanDeVol/Writeup.md) |
 | Stegano | À longueurs d'ondes [2/3] (2025) | `OPENNC{446,10625 MHz}` | [Stegano/ALongueursDOndes2/Writeup.md](Stegano/ALongueursDOndes2/Writeup.md) |
+| Web | L'éthique du hacker - Les failles du pouvoir [2/3] (2025) | `OPENNC{1F10|_|5Q11m3m3c0mb47}` | [Web/EthiqueDuHacker_2/Writeup.md](Web/EthiqueDuHacker_2/Writeup.md) |
+| Web | IGOR (2025) | `OPENNC{N07_1nt3nd3D_f0R_yOuR_3ye5...}` | [Web/IGOR/Writeup.md](Web/IGOR/Writeup.md) |
+| Web | Neurona Maintenance (2025) | `OPENNC{S4ndb0x_3sc4p3_vi4_c0nfig_l04d!}` | [Web/NeuronaMaintenance/Writeup.md](Web/NeuronaMaintenance/Writeup.md) |

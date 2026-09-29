@@ -128,3 +128,25 @@ montants réels serait une pure supposition.
    dans un navigateur (JS activé) pour charger l'historique complet des transferts.
 2. Repérer les deux ventes espacées de 17 jours, noter les montants en ETH (ou BTC).
 3. `md5sum` de la chaîne `"<gain>ETH"` (ou `BTC` selon l'unité), format `OPENNC{...}`.
+
+### MàJ 2026-09 : confirmation via l'API NFT publique d'Alchemy
+
+En passant par la clé publique `demo` d'Alchemy (seule source non bloquée depuis
+cet environnement — RPC publics sans clé, Etherscan/Blur/OpenSea tous en
+Cloudflare 403/401) :
+
+```js
+fetch("https://eth-mainnet.g.alchemy.com/nft/v3/demo/getNFTSales?fromBlock=0&toBlock=latest&order=asc"
+     +"&contractAddress=0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d&tokenId=742")
+```
+
+renvoie **une seule vente** pour le BAYC #742 authentique :
+`marketplace=wyvern, prix ≈ 0.114 ETH, blockNumber=12345624 (2021), pageKey=null`.
+
+→ Le vrai #742 n'a donc **jamais** été acheté puis revendu 17 jours plus tard.
+La transaction « achat + revente à 17 jours » recherchée porte forcément sur un
+**jeton d'une collection contrefaisante** (mirror/copycat de BAYC, cohérent avec
+« peinture faite par le fils du Capt'N » = contrefaçon), collection qui n'a pas pu
+être identifiée de façon certaine ici. **Toujours pas de flag soumis** : sans les
+deux montants exacts (et l'unité ETH/BTC), tout md5 serait une supposition, ce que
+les règles de la plateforme interdisent.
