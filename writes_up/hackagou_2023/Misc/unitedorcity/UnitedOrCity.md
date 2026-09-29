@@ -23,7 +23,7 @@ On va donc partir de l’hypothèse suivante :
 Il ne reste plus qu’à traduire l’image et voir ce que donne le message : 
 `01001110011001010111000000110000`
 
-On le déchiffre dans [cyberchef](../../../../ressouces/tools/cyberchef.md) : https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',8)&input=MDEwMDExMTAwMTEwMDEwMTAxMTEwMDAwMDAxMTAwMDA&ieol=CRLF&oeol=CR
+On le déchiffre dans [cyberchef](https://gchq.github.io/CyberChef/) : https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',8)&input=MDEwMDExMTAwMTEwMDEwMTAxMTEwMDAwMDAxMTAwMDA&ieol=CRLF&oeol=CR
 
 On obtient : `Nep0`
 Au vu du personnage il s’agit donc de la bonne solution.
@@ -36,7 +36,7 @@ echo -ne 'Nep0' | md5sum
 >[!warning] Attention aux options de la commande echo
 Bien faire attention d’utiliser `echo -ne` sinon la chaine de caractère qui sera envoyé à md5 contient un retour chariot `\n` qui va donner un autre résultat que celui attendu.
 
-Sinon on peux toujours utiliser notre outil [cyberchef](../../../../ressouces/tools/cyberchef.md) préféré : https://gchq.github.io/CyberChef/#recipe=MD5()&input=TmVwMA&ieol=CRLF&oeol=CR
+Sinon on peux toujours utiliser notre outil [cyberchef](https://gchq.github.io/CyberChef/) préféré : https://gchq.github.io/CyberChef/#recipe=MD5()&input=TmVwMA&ieol=CRLF&oeol=CR
 
 >[!question]- Spoiler du flag
 > OPENNC{a232a03f4c605263fe9594bc3785a861}

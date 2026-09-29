@@ -25,19 +25,18 @@ Merci aux auteurs !
 - [Dé&Ness](Forensic/deetness/README.md)
 
 ## Stegano
-- [3x1f](Stegano/3x1f.md)
+- [3x1f](Stegano/3x1f/3x1f.md)
 - [Ellesbe](Stegano/ellesbe/README.md)
-- [Ellesbe](Stegano/Ellesbe.md)
 
 ## OSINT
-- [Goalcausse](OSINT/Goalcausse/README.md)
+- [Goalcausse](OSINT/Goalcausse/Goalcausse.md)
 - [HiddN](OSINT/hiddn/README.md)
 
 ## Misc
-- [UnitedOrCity](Misc/unitedorcity/README.md)
+- [UnitedOrCity](Misc/unitedorcity/UnitedOrCity.md)
 
 ## Reverse
-- [Rizverse](Reverse/rizverse/README.md)
+- [Rizverse](Reverse/rizverse/RizVerse.md)
 
 ## Web3
 - [SingeBlasé](web3/SingeBlasé.md)

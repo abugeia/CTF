@@ -11,7 +11,7 @@ Trouvez sa signification !
 
 Rien de bien sorcier ici, même le titre nous aide, il s’agit d’un code en morse.
 
-Si comme moi, on ne connait pas le morse par cœur, on envoi la chaîne dans un décodeur en ligne. ça tombe bien, [dcode](../../../../ressouces/tools/dcode.md) en est capable : https://www.dcode.fr/morse-code
+Si comme moi, on ne connait pas le morse par cœur, on envoi la chaîne dans un décodeur en ligne. ça tombe bien, [dcode](https://www.dcode.fr/) en est capable : https://www.dcode.fr/morse-code
 
 >[!tip]- Une erreur ?
 > Petite subtilité, le code déchiffré nous donne des parenthèse au lieu des acclages. Bien penser à la modifier pour que le flag soit valide.

@@ -8,12 +8,12 @@ Trouvez sa signfication !
 
 Le nom du challenge nous donne un indice, il faut appliquer le code césar pour déchiffrer le message.
 
-Pour le confirmer on peux utiliser [dcode](../../../../ressouces/tools/dcode.md) pour identifier le cypher. Il nous indique dans les plus probables : 
+Pour le confirmer on peux utiliser [dcode](https://www.dcode.fr/) pour identifier le cypher. Il nous indique dans les plus probables : 
   
 * [Caesar Box Cipher](https://www.dcode.fr/caesar-box-cipher
 * [Scytale Cipher](https://www.dcode.fr/scytale-cipher
 
-Le cipher de césar arrive bien en tête ce qui confirme nos soupçons. Maintenant place au déchiffrage, on va donc utiliser le site [cyberchef](../../../../ressouces/tools/cyberchef.md).
+Le cipher de césar arrive bien en tête ce qui confirme nos soupçons. Maintenant place au déchiffrage, on va donc utiliser le site [cyberchef](https://gchq.github.io/CyberChef/).
 
 la méthode pour déchiffrer le code s’appel du ROTX (X équivalent à un chiffre). Le rot le plus utilisé de base est le ROT13.
 
