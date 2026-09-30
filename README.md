@@ -16,10 +16,10 @@ Référence de tous les CTF mondiaux :  [ctf time](https://ctftime.org/)
 [Vidéo de résolution](https://www.youtube.com/watch?v=J4sWIp71rVU)
 
 2023  
-https://ctf2023.hackagou.nc/
+ctf2023.hackagou.nc (site hors ligne)
 
 2024  
-https://ctf2024.hackagou.nc/
+ctf2024.hackagou.nc (site hors ligne)
 
 2025  
 https://midhack.hackagou.nc/

@@ -6,7 +6,7 @@ Ned : Tauira a relevé d'autres traces et a pu exporter un fichier [MISP](https:
 
 Jocelyne : Oh quelle bonne nouvelle !
 
-Ned : Alors oui, mais pour que les résultats soient exploitables, trouve-moi la règle [YARA](https://www.sekoia.io/fr/glossaire/regle-yara/) qui a matché et l'IP contactée.
+Ned : Alors oui, mais pour que les résultats soient exploitables, trouve-moi la règle [YARA](https://www.sekoia.com/fr/glossary/yara-rule) qui a matché et l'IP contactée.
 
 Jocelyne : Sorry, là j'ai pas le temps. Je demande à un des volontaires du MEH.
 

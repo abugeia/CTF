@@ -11,9 +11,9 @@ Kali Linux est une distribution basée sur Debian, spécialement conçue pour le
 #### Option A : Machine Virtuelle (VirtualBox ou VMware)
 
 1.  **Télécharger Kali Linux :** Rendez-vous sur le site officiel de Kali Linux ([https://www.kali.org/get-kali/#kali-virtual-machines](https://www.kali.org/get-kali/#kali-virtual-machines)) et téléchargez l'image ISO ou une image pré-construite pour VirtualBox/VMware.
-2.  **Installer VirtualBox/VMware Workstation Player :** Si vous ne l'avez pas déjà, téléchargez et installez votre logiciel de virtualisation préféré.
+2.  **Installer VirtualBox/VMware Workstation Pro (gratuit) :** Si vous ne l'avez pas déjà, téléchargez et installez votre logiciel de virtualisation préféré.
     *   VirtualBox : [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
-    *   VMware Workstation Player : [https://www.vmware.com/fr/products/workstation-player/workstation-player-evaluation.html](https://www.vmware.com/fr/products/workstation-player/workstation-player-evaluation.html)
+    *   VMware Workstation Pro (gratuit) : [https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 3.  **Créer une nouvelle machine virtuelle :**
     *   Ouvrez VirtualBox/VMware et créez une nouvelle machine virtuelle.
     *   Sélectionnez l'image ISO de Kali Linux ou importez l'image pré-construite.

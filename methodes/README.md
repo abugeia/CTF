@@ -8,7 +8,7 @@
 - [Hex Editor](https://hexed.it/): **éditeur hexadécimal** en ligne pour fichiers ★★
 - [Online Converter](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html): outil **convertisseur ASCII/Hex/Dec/Bin/b64** en ligne ★
 - [XOR Calculator](http://xor.pw/) ★★
-- [Resource Saver](https://chrome.google.com/webstore/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb?hl=en-US): extension Chrome pour **télécharger toutes les ressources d'un site web**
+- [Resource Saver](https://chromewebstore.google.com/detail/save-all-resources/abpdnfjocnmdomablahdcfnoggeeiedb): extension Chrome pour **télécharger toutes les ressources d'un site web**
 - [Github Secrets](https://github.com/neodyme-labs/github-secrets): rechercher des **commits orphelins ou force-pushés** dans un dépôt Github ★★
 - [Zip Password Cracker](https://passwordrecovery.io/zip-file-password-removal/): un **trouveur de mot de passe zip** en ligne vraiment utile et gratuit
 - [Regex Check](https://www.debuggex.com/): vérifier les **expressions régulières** en ligne ★
@@ -21,9 +21,9 @@
 #### Outils
 - [dCode](https://www.dcode.fr): **paradis de la crypto** ★★★
 - [QuipQuip](https://quipqiup.com/): **résolveur de chiffrement par substitution** en ligne avec analyse fréquentielle, permet aussi d'insérer des indices de fréquence ★★
-- [Big Numbers Calculator 1](http://www.javascripter.net/math/calculators/100digitbigintcalculator.htm): une **calculatrice en ligne pour les entiers énormes**
+- [Big Numbers Calculator 1](https://www.dcode.fr/formal-calculator): une **calculatrice en ligne pour les entiers énormes**
 - [Big Numbers Calculator 2](https://defuse.ca/big-number-calculator.htm): une **calculatrice en ligne pour les entiers énormes**, interface plus basique mais peut-être meilleures performances
-- [RSA Calculator](https://www.cryptool.org/en/cto/highlights/rsa-step-by-step): **calculatrice de paramètres RSA en ligne avec chiffrement/déchiffrement**, fonctionne aussi avec de gros nombres 
+- [RSA Calculator](https://www.cryptool.org/en/cto/rsa-step-by-step/): **calculatrice de paramètres RSA en ligne avec chiffrement/déchiffrement**, fonctionne aussi avec de gros nombres 
 - [Inverse mod N Calculator](https://www.dcode.fr/modular-inverse): calculer l'**inverse modulaire d'un nombre**, même avec de gros nombres
 - [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool): outil Python pour effectuer des **attaques RSA** ★★★
 - [FactorDB](http://factordb.com/): trouver des **factorisations d'entiers bien connues** ★★★
@@ -35,8 +35,8 @@
 - [Online Hash Crack](https://www.onlinehashcrack.com/): gros site web pour **effectuer le cassage et l'identification de hash/mot de passe** sur divers fichiers
 - [Hash Identifier](https://tools.kali.org/password-attacks/hash-identifier): outil Linux pour **effectuer l'identification de hash**
 - [Morse Code Translator](https://morsecode.world/international/translator.html)
-- [Dual Tone Decoder](http://dialabc.com/sound/detect/): trouver les **tonalités DTMF** dans les clips audio
-- [gmpy2](https://gmpy2.readthedocs.io/en/latest/intro.html): bibliothèque Python pour **l'arithmétique multi-précision**
+- [Dual Tone Decoder](https://www.dcode.fr/dtmf-code): trouver les **tonalités DTMF** dans les clips audio
+- [gmpy2](https://gmpy2.readthedocs.io/): bibliothèque Python pour **l'arithmétique multi-précision**
 #### Ressources
 - [Weird Ciphers](http://www.quadibloc.com/crypto/intro.htm): une liste de quelques **algorithmes cryptographiques étranges**
 - [Symbolic Ciphers](https://www.dcode.fr/symbols-ciphers): une autre liste d'**algorithmes cryptographiques étranges**
@@ -72,7 +72,7 @@
 ### Outils
 - [Syscall Reference](https://syscalls.w3challs.com/): **manuel des syscalls x86 / x64** avec valeurs des registres
 - [Asm/Disasm](https://defuse.ca/online-x86-assembler.htm#disassembly): **assembleur et désassembleur x86 / x64** en ligne
-- [LibC Check](https://libc.blukat.me/?q=puts%3A0x7f51bf2ee9c0&l=libc6_2.27-3ubuntu1_amd64): trouver toutes les **versions libc possibles** avec nom de symbole et adresse d'entrée
+- [LibC Check](https://libc.rip/): trouver toutes les **versions libc possibles** avec nom de symbole et adresse d'entrée
 - [BinaryNinja](https://cloud.binary.ninja/): **décompilateur de fichiers binaires** en ligne
 - [DogBolt](https://dogbolt.org/): **décompilateur de fichiers binaires** en ligne avec différentes options comme Ghidra et BinaryNinja
 ### Ressources
