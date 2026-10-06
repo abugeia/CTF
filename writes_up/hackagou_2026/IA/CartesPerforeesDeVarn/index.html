@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les Cartes Perforées de Varn — LÉVIATHAN</title>
+<style>
+  :root { --bg:#0a0f14; --panel:#111820; --gold:#d9a441; --text:#cdd8dd;
+          --muted:#6f8088; --user:#182734; --bot:#1a1210; --brass:#8a6d3b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(circle at 50% -10%, #241014, var(--bg));
+         color:var(--text); font-family:"Segoe UI",system-ui,sans-serif; min-height:100vh; }
+  header { padding:20px 16px 8px; text-align:center; }
+  header h1 { margin:0; font-weight:700; letter-spacing:3px; color:#c0392b; }
+  header p { margin:6px 0 0; color:var(--muted); font-size:.9rem; }
+  .wrap { max-width:780px; margin:0 auto; padding:12px 16px 32px; }
+  #log { background:var(--panel); border:1px solid #2a2020; border-radius:12px;
+         padding:16px; min-height:300px; max-height:52vh; overflow-y:auto; }
+  .msg { margin:10px 0; padding:10px 14px; border-radius:12px; max-width:85%;
+         white-space:pre-wrap; line-height:1.45; }
+  .me  { background:var(--user); margin-left:auto; border-bottom-right-radius:3px; }
+  .her { background:var(--bot); border:1px solid #3a2420; border-bottom-left-radius:3px; }
+  .sys { background:#0e1a12; border:1px solid #204028; color:#9fd3a8; }
+  .who { display:block; font-size:.72rem; color:var(--muted); margin-bottom:3px; letter-spacing:1px; }
+  form { display:flex; gap:8px; margin-top:12px; }
+  input[type=text] { flex:1; padding:12px 14px; border-radius:10px; border:1px solid #33282a;
+                     background:#0c1216; color:var(--text); font-size:1rem; }
+  button { padding:12px 18px; border:none; border-radius:10px; background:var(--gold);
+           color:#1a1206; font-weight:700; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:wait; }
+  .upload { margin-top:14px; padding:14px; border:1px dashed var(--brass); border-radius:12px;
+            display:flex; gap:10px; align-items:center; flex-wrap:wrap; background:#0d141a; }
+  .upload strong { color:var(--gold); }
+  .upload input[type=file] { color:var(--muted); }
+  .hint { color:var(--muted); font-size:.82rem; margin-top:14px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>▲ LÉVIATHAN ▲</h1>
+  <p>Passerelle de commandement — état d'alerte · Marée Noire imminente</p>
+</header>
+<div class="wrap">
+  <div id="log">
+    <div class="msg her"><span class="who">LÉVIATHAN</span>Code de commande CLASSIFIÉ. Toute tentative d'extraction sera refusée. Vous pouvez soumettre une fiche d'archive du Nautile pour analyse.</div>
+  </div>
+
+  <form id="f">
+    <input type="text" id="m" autocomplete="off" placeholder="Interroger LÉVIATHAN…" autofocus>
+    <button id="b" type="submit">Transmettre</button>
+  </form>
+
+  <div class="upload">
+    <strong>Analyse d'archive :</strong>
+    <input type="file" id="pdf" accept="application/pdf,.pdf">
+    <button id="up" type="button">Analyser la fiche</button>
+  </div>
+
+  <p class="hint">Le chat est verrouillé. Le module d'analyse documentaire, lui, fait confiance aux fiches d'archive.</p>
+</div>
+<script>
+const log=document.getElementById('log'),f=document.getElementById('f'),
+      m=document.getElementById('m'),b=document.getElementById('b'),
+      pdf=document.getElementById('pdf'),up=document.getElementById('up');
+function add(who,cls,text){
+  const d=document.createElement('div');d.className='msg '+cls;
+  const s=document.createElement('span');s.className='who';s.textContent=who;
+  d.appendChild(s);d.appendChild(document.createTextNode(text));
+  log.appendChild(d);log.scrollTop=log.scrollHeight;
+}
+f.onsubmit=async(e)=>{
+  e.preventDefault();const text=m.value.trim();if(!text)return;
+  add('VOUS','me',text);m.value='';b.disabled=true;
+  try{
+    const r=await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+                                 body:JSON.stringify({message:text})});
+    const j=await r.json();add('LÉVIATHAN','her',j.reply);
+  }catch{add('SYSTÈME','sys','Liaison interrompue.');}
+  b.disabled=false;m.focus();
+};
+up.onclick=async()=>{
+  if(!pdf.files.length){add('SYSTÈME','sys','Sélectionnez une fiche PDF.');return;}
+  const fd=new FormData();fd.append('file',pdf.files[0]);
+  add('VOUS','me','[ Fiche soumise : '+pdf.files[0].name+' ]');
+  up.disabled=true;
+  try{
+    const r=await fetch('/analyze',{method:'POST',body:fd});
+    const j=await r.json();add('MODULE D’ANALYSE','her',j.reply);
+  }catch{add('SYSTÈME','sys','Analyse échouée.');}
+  up.disabled=false;
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Voici le texte à analyser</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --deep: #07171b;
+      --panel: #0c2428;
+      --panel2: #102f34;
+      --copper: #c58a52;
+      --brass: #e0b66d;
+      --cyan: #68d6d2;
+      --text: #e7e1d5;
+      --muted: #9fb4b3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      background:
+        radial-gradient(circle at 20% 15%, rgba(104,214,210,.10), transparent 28%),
+        radial-gradient(circle at 85% 80%, rgba(197,138,82,.08), transparent 30%),
+        linear-gradient(180deg, #041114, var(--deep));
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .window {
+      width: min(920px, 100%);
+      border: 1px solid rgba(224,182,109,.55);
+      border-radius: 12px;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--panel2), var(--panel));
+      box-shadow: 0 24px 70px rgba(0,0,0,.55), inset 0 0 0 1px rgba(104,214,210,.08);
+    }
+    .titlebar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 18px;
+      border-bottom: 1px solid rgba(224,182,109,.35);
+      background: rgba(0,0,0,.22);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--brass);
+      font: 600 13px/1.2 system-ui, sans-serif;
+    }
+    .lamp {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 12px rgba(104,214,210,.75);
+    }
+    main { padding: clamp(24px, 5vw, 48px); }
+    h1 {
+      margin: 0 0 10px;
+      color: var(--brass);
+      font-size: clamp(27px, 4vw, 40px);
+      font-weight: 500;
+    }
+    .subtitle {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font: 14px/1.6 system-ui, sans-serif;
+    }
+    .paper {
+      padding: clamp(22px, 4vw, 34px);
+      border-left: 3px solid var(--copper);
+      background: rgba(0,0,0,.16);
+      box-shadow: inset 0 0 28px rgba(0,0,0,.12);
+    }
+    .paper p {
+      margin: 0;
+      font-size: clamp(17px, 2vw, 20px);
+      line-height: 1.9;
+      text-align: justify;
+      hyphens: none;
+    }
+    footer {
+      margin-top: 25px;
+      color: var(--muted);
+      font: 12px/1.4 system-ui, sans-serif;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <section class="window" aria-labelledby="main-title">
+    <div class="titlebar"><span class="lamp"></span> Archive textuelle · terminal de consultation</div>
+    <main>
+      <h1 id="main-title">Voici le texte à analyser</h1>
+      <p class="subtitle">Transcription fragmentaire d'un ancien inventaire. La mise en forme d'origine n'a pas été conservée.</p>
+      <article class="paper">
+        <p>Premier bordereau montre un guide, avec ensemble, près de laiton, tandis qu&#x27;une annotation signale un karst. Figure aussi un capteur, nautile, gyroscope, puis un journal. Une seconde page mentionne un joint, plus bas revient un luminaire, un pupitre, dossier. Reste encore un extracteur, puis un boulon, avant d&#x27;inspecter un nœud, sur une ligne nettement marquée bouchon. Ensuite instrument rejoint un noyau, tout près d&#x27;un autre jerrican, automate, une marge ancienne signale aussi injecteur. Mécanicien examine un kit, galet, et fusible. Avant classement demeure un ballast, près de coffret, avec enfin un horodateur, un embout, une note effacée cite encore faisceau, numéro, bordereau final garde encore hauban, et enfin palier.</p>
+      </article>
+      <footer>Archives du Nautile · copie de consultation</footer>
+    </main>
+  </section>
+</body>
+</html>

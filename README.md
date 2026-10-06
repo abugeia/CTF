@@ -24,6 +24,9 @@ ctf2024.hackagou.nc (site hors ligne)
 2025  
 https://midhack.hackagou.nc/
 
+2026  
+https://ctf.hackagou.nc — [write-ups](writes_up/hackagou_2026/README.md)
+
 ## Autres CTF 🚩
 - [picoCTF](https://picoctf.org/)
 - [capturetheflag](https://capturetheflag.it/risorse/come-imparo)

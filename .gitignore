@@ -227,3 +227,6 @@ pyproject.toml
 ctfd-downloads/
 # binaire ctfd-mcp buildé localement (go install avec GOBIN=.bin)
 .bin/
+
+# Windows NTFS alternate data streams
+*Zone.Identifier
