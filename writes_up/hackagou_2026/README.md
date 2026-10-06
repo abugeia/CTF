@@ -29,6 +29,7 @@ introuvable, infra morte ou présence physique) · 🔒 prérequis manquant.
 | Web | La chaufferie de laiton | 100 | ✅ | [Web/LaChaufferieDeLaiton/Writeup.md](Web/LaChaufferieDeLaiton/Writeup.md) |
 | Web | Le télégraphe abyssal | 100 | 🟢 résolu équipe (Morse + privesc GUEST→ADMIN) | [Web/TelegrapheAbyssal/Writeup.md](Web/TelegrapheAbyssal/Writeup.md) |
 | Web | La Passe Sans Retour | 250 | ✅ | [Web/LaPasseSansRetour/Writeup.md](Web/LaPasseSansRetour/Writeup.md) |
+| Web | La passerelle LÉVIATHAN | 249 | ✅ (XFF `127.0.0.1` + WAF casse `commander` + 3 clés) | [Web/LaPasserelleLeviathan/Writeup.md](Web/LaPasserelleLeviathan/Writeup.md) |
 | Pwn | Le régulateur de pression | 100 | ✅ (exploit vérifié via `nc`) | [Pwn/LeRegulateurDePression/Writeup.md](Pwn/LeRegulateurDePression/Writeup.md) |
 | Pwn | Le cœur de laiton | 245 | ✅ | [Pwn/LeCoeurDeLaiton/Writeup.md](Pwn/LeCoeurDeLaiton/Writeup.md) |
 | Forensic | La backdoor secrète | 100 | ✅ `OPENNC{L3v14th4n_v41ncr4}` (PowerShell fileless) | [Forensic/LaBackdoorSecrete/Writeup.md](Forensic/LaBackdoorSecrete/Writeup.md) |
@@ -46,11 +47,16 @@ introuvable, infra morte ou présence physique) · 🔒 prérequis manquant.
 
 **Divers — Le HacKagou édition 2026 (OBLIGATOIRE, 0 pt)** : validé (QCM d'accueil, pas de flag OPENNC).
 
-## Restant à distance (si l'infra conteneurs repart)
+## Restant (instances relancées le 2026-10-06)
 
+- **Web #40 La passerelle LÉVIATHAN** : ✅ résolu — voir le write-up (bypass IP + WAF + 3 clés reconstituées depuis les actes 1-3).
+- **OSINT #20 Le Dernier Vol du MANTA-06** : instance relancée, en cours d'analyse.
+- **OSINT #28 Origine du Léviathan** : géoloc des 6 photos — nécessite l'instance.
 - **Crypto #31 Télégraphe** : télégramme (instance) à lire « dans tous les sens » avec la clé **ALPHABET** (totem Morse récupéré).
-- **OSINT #20 / #28**, **Web #40 La passerelle LÉVIATHAN** : dépendent d'instances Docker (`Container creation failed` pour l'instant).
 - **Crypto #45 Chaufferie piégée** : seul challenge 100 % hors-instance encore ouvert — tous les vecteurs stégo/LSB/C2PA/constantes ont été éliminés, l'indice « 5409th position » reste à percer.
+
+> Note : la création d'instance **via l'API token échoue** (`Container creation failed`) ;
+> les instances doivent être démarrées **depuis le navigateur** (session CTFd de l'équipe).
 
 ## Fichiers / infra
 
